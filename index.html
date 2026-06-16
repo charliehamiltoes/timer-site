@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+<h1>Timer</h1>
+
+<!-- THEME SELECTOR -->
+<div class="theme-box">
+    <label>Theme:</label>
+   <select id="theme" onchange="changeTheme()">
+    <option value="dark">Dark</option>
+    <option value="neon">Neon</option>
+    <option value="pastel">Pastel</option>
+    <option value="cyber">Cyber</option>
+    <option value="ocean">Ocean</option>
+    <option value="sunset">Sunset</option>
+    <option value="minimal">Minimal</option>
+</select>
+</div>
+
+<!-- INPUT -->
+<div class="inputs">
+    <input id="hours" type="number" placeholder="Hours" min="0">
+    <input id="minutes" type="number" placeholder="Minutes" min="0">
+    <input id="seconds" type="number" placeholder="Seconds" min="0">
+</div>
+
+<!-- DISPLAY -->
+<div class="display" id="display">00:00:00</div>
+
+<!-- BUTTONS -->
+<div class="buttons">
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+</div>
+
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

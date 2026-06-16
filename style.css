@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial;
+    transition: 0.3s;
+}
+
+/* TITLE */
+h1 {
+    font-size: 60px;
+}
+
+/* INPUTS */
+.inputs input {
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+/* DISPLAY */
+.display {
+    font-size: 80px;
+    margin: 30px;
+    font-weight: bold;
+}
+
+/* BUTTONS */
+button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* THEME BOX */
+.theme-box {
+    margin-bottom: 20px;
+}
+
+/* ===================== */
+/* 🌙 DARK THEME */
+/* ===================== */
+body.dark {
+    background: #0f0f0f;
+    color: white;
+}
+
+body.dark button {
+    background: white;
+    color: black;
+}
+
+/* ===================== */
+/* ⚡ NEON THEME */
+/* ===================== */
+body.neon {
+    background: black;
+    color: #00ffcc;
+}
+
+body.neon .display {
+    text-shadow: 0 0 20px #00ffcc;
+}
+
+body.neon button {
+    background: #00ffcc;
+    color: black;
+}
+
+/* ===================== */
+/* 🌸 PASTEL THEME */
+/* ===================== */
+body.pastel {
+    background: #ffeef5;
+    color: #333;
+}
+
+body.pastel .display {
+    color: #ff6fae;
+}
+
+body.pastel button {
+    background: #ffb6d5;
+    color: white;
+}
+
+body.cyber {
+    background: #05010a;
+    color: #00f7ff;
+}
+
+body.cyber .display {
+    text-shadow: 0 0 20px #00f7ff;
+}
+
+body.cyber button {
+    background: #00f7ff;
+    color: black;
+}
+
+body.ocean {
+    background: #001f2d;
+    color: #4dd0e1;
+}
+
+body.ocean .display {
+    text-shadow: 0 0 15px #4dd0e1;
+}
+
+body.ocean button {
+    background: #4dd0e1;
+    color: black;
+}
+
+body.sunset {
+    background: #2b0f1a;
+    color: #ff7a59;
+}
+
+body.sunset .display {
+    text-shadow: 0 0 15px #ff7a59;
+}
+
+body.sunset button {
+    background: #ff7a59;
+    color: white;
+}
+
+body.minimal {
+    background: white;
+    color: black;
+}
+
+body.minimal button {
+    background: black;
+    color: white;
+}
+
+.progress-container {
+    width: 60%;
+    height: 12px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 100%;
+    background: white;
+    transition: width 1s linear;
+}
